@@ -51,10 +51,16 @@ class Game{
                      index = index+1;
                      x = 500-allPlayers[plr].distance;
                      y=500;
-                     
+                     console.log(x)
+                     console.log(y)
                      players[index -1].x = x;
                      players[index - 1].y = y;
-                       
+
+                     fill("white");
+                     textSize(25);
+                    text("Player 1="+allPlayers.player1.score,50,50)
+                    text("Player 2="+allPlayers.player2.score,50,100)
+
                      if(index === player.index){
                          
                          fill("black");
